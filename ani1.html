@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            *{
+                margin: 0%;
+            }
+.a3{
+    font-size: 300;
+    color: aliceblue;
+}
+header{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(128,128,148,1) 35%, rgba(75,163,192,1) 62%, rgba(0,212,255,1) 100%);
+}
+#t1{
+    position: relative;
+}
+#cloud1{
+    position: relative;
+    left: 1000px;
+    color: #90e0ef;
+    animation: cloudA 10s alternate infinite;
+}
+#cloud2{
+    position: absolute;
+    color: #90e0ef;
+    animation: cloudB 20s alternate infinite;
+    right: 1000px;
+}
+#cloud3{
+    position: absolute;
+    color: #90e0ef;
+    animation: cloudB 20s alternate infinite;
+    right: 1000px;
+}
+    
+@keyframes cloudA{
+    0%{left:200;
+    opacity:40%;}
+    20%{right: 20;
+        opacity:70%;}
+    50%{left: 100;
+        opacity:50%;}
+
+}
+@keyframes cloudB{
+    0%{right:0;
+    }
+    20%{right: 20;
+        }
+    50%{rightt: 400;
+        }
+    }
+    @keyframes cloudC{
+    0%{left:0;}
+    20%{left: 20;}
+    50%{left: 400;}
+    100%{right: 300;}
+    }
+
+#main{
+    background-image: url('https://25.media.tumblr.com/062302037c0fceb1195679f54447e5ae/tumblr_mnj3ssd6oP1raymzqo1_500.gif');
+    height: 800px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+        <div id="t2">
+            <div id="t1">
+                <i class=" material-icons a3" id="cloud1">cloud</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class=" material-icons a3"  id="cloud2">cloud</i>
+                <i class=" material-icons a3"  id="cloud3">cloud</i>
+                <i class=" material-icons a3"  id="cloud2">cloud</i>
+                <i class=" material-icons a3"  id="cloud1">cloud</i>
+            </div>
+        </div>
+        <div id="main">
+
+        </div>
+        </header>
+    </body>
+</html>
